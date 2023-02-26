@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 180px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* About */
+#about {
+    
+    color: #ababab;
+}
+
+.row {
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    max-height: 550px;
+    max-width: 900px;
+    padding-left: 200px;
+    padding-right: 25px;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    padding-right: 45px;
+    text-align: justify;
+}
+
+.subtitle {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.para {
+    padding-top: 10px;
+    font-size: large;
+    padding-right: 45px;
+    text-align: justify;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color:#b54769;
+    font-size: 16px;
+}
+
+.cgpa{
+    color:white;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    display: inline-block;
+    margin-left: 400px;
+}
+
+.perc {
+    color:white;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    display: inline-block;
+    margin-left: 600px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* .edu-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.edu-contents ul li span {
+    color:#b54769;
+    font-size: 16px;
+}
+
+.edu-contents ul li span span{
+    color:white;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.honor-contents ul li {
+    list-style: circle;
+    margin: 10px 0;
+}
+
+.honor-contents ul li span {
+    color:#b54769;
+    font-size: 16px;
+} */
